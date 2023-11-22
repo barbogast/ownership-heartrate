@@ -1,0 +1,25 @@
+{
+  "columns": [
+    {
+      "dbName": "dateTime",
+      "sourceName": "dateTime",
+      "type": "text"
+    },
+    {
+      "dbName": "bpm",
+      "sourceName": "bpm",
+      "type": "integer"
+    },
+    {
+      "dbName": "confidence",
+      "sourceName": "confidence",
+      "type": "integer"
+    }
+  ],
+  "enablePostProcessing": true,
+  "id": "cbbb6623-7052-4ef5-8fa2-8aef97ac547e",
+  "label": "heart-rate-2023-11-06",
+  "postProcessingCode": "type Value = string | number | null | undefined\ntype Row = Record<string, Value>\ntype ReturnValue = Row[]\n\ntype Data = {\n  dateTime: string, value: {\n    bpm: number,\n    confidence: number\n  }\n}[]\n\nfunction postProcess(data: Data): ReturnValue | Promise<ReturnValue> {\n  return data.map(row => ({\n    dateTime: row.dateTime,\n    bpm: row.value.bpm,\n    confidence: row.value.confidence,\n  }))\n}\n",
+  "source": "json",
+  "tableName": "heartrate"
+}

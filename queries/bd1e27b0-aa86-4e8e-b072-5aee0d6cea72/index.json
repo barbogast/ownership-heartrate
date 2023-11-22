@@ -1,0 +1,19 @@
+{
+  "chartType": "lineChart",
+  "databaseFileName": "",
+  "databaseSource": {
+    "id": "cbbb6623-7052-4ef5-8fa2-8aef97ac547e",
+    "type": "local"
+  },
+  "id": "bd1e27b0-aa86-4e8e-b072-5aee0d6cea72",
+  "label": "Heart rate",
+  "transformConfig": {
+    "dataOrientation": "row",
+    "dataRowIndex": 0,
+    "labelColumn": "dateTime",
+    "selectedColumns": [
+      "bpm"
+    ]
+  },
+  "transformType": "config"
+}
