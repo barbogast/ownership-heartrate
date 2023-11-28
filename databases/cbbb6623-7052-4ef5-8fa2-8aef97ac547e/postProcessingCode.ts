@@ -8,9 +8,10 @@ type Data = {
     confidence: number
   }
 }[]
+type Files = Record<string, Data>
 
-function postProcess(data: Data): ReturnValue | Promise<ReturnValue> {
-  return data.map(row => ({
+function postProcess(files: Files): ReturnValue | Promise<ReturnValue> {
+  return Object.values(files)[0]!.map(row => ({
     dateTime: row.dateTime,
     bpm: row.value.bpm,
     confidence: row.value.confidence,

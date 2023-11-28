@@ -1,0 +1,19 @@
+{
+  "chartType": "lineChart",
+  "databaseFileName": "",
+  "databaseSource": {
+    "id": "9da37cc6-b8c1-4ea2-88b9-d0d29260f10c",
+    "type": "local"
+  },
+  "id": "74fca564-abe4-4767-a2e4-3ab084111dd1",
+  "label": "Heart rate aggregated in 5 min intervals",
+  "transformConfig": {
+    "dataOrientation": "row",
+    "dataRowIndex": 0,
+    "labelColumn": "",
+    "selectedColumns": [
+      "avg(bpm)"
+    ]
+  },
+  "transformType": "config"
+}

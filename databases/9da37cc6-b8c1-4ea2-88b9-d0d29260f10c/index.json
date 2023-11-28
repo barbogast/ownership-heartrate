@@ -1,0 +1,29 @@
+{
+  "columns": [
+    {
+      "dbName": "timestamp",
+      "sourceName": "timestamp",
+      "type": "integer"
+    },
+    {
+      "dbName": "dateTime",
+      "sourceName": "dateTime",
+      "type": "text"
+    },
+    {
+      "dbName": "bpm",
+      "sourceName": "bpm",
+      "type": "integer"
+    },
+    {
+      "dbName": "confidence",
+      "sourceName": "confidence",
+      "type": "integer"
+    }
+  ],
+  "enablePostProcessing": true,
+  "id": "9da37cc6-b8c1-4ea2-88b9-d0d29260f10c",
+  "label": "heart-rate-2023-11--06-to-15",
+  "source": "json",
+  "tableName": "heartrate"
+}
