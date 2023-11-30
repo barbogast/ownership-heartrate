@@ -10,9 +10,9 @@
   "transformConfig": {
     "dataOrientation": "row",
     "dataRowIndex": 0,
-    "labelColumn": "",
+    "labelColumn": "time",
     "selectedColumns": [
-      "avg(bpm)"
+      "bpm"
     ]
   },
   "transformType": "config"
