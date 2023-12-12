@@ -8,7 +8,6 @@ WITH RECURSIVE generate_series(value) AS (
 select 
     round(h.bpm) as bpm,
     s.value as timestamp,
-    strftime('%H:%M', s.value, 'unixepoch', 'localtime') as time,
     strftime('%Y-%m-%d %H:%M', s.value, 'unixepoch')
 from (
     select 
@@ -23,7 +22,7 @@ from (
 ) as h
 right join generate_series s on s.value = h.five_minute_time
         
-order by time
+order by s.value
 
 
 

@@ -1,5 +1,7 @@
 {
-  "chartType": "lineChart",
+  "chartConfig": {
+    "chartType": "lineChart"
+  },
   "databaseFileName": "",
   "databaseSource": {
     "id": "cbbb6623-7052-4ef5-8fa2-8aef97ac547e",

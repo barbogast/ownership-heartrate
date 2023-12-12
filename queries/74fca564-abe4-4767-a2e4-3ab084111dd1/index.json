@@ -1,5 +1,7 @@
 {
-  "chartType": "timeSeriesDayChart",
+  "chartConfig": {
+    "chartType": "timeSeriesDayChart"
+  },
   "databaseFileName": "",
   "databaseSource": {
     "id": "9da37cc6-b8c1-4ea2-88b9-d0d29260f10c",

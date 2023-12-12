@@ -1,6 +1,6 @@
 {
   "chartConfig": {
-    "chartType": "timeSeriesDayChart"
+    "chartType": "vegaChart"
   },
   "databaseFileName": "",
   "databaseSource": {
@@ -8,8 +8,8 @@
     "type": "local"
   },
   "enableTransform": true,
-  "id": "6b92cced-dded-40b3-97d9-4845eaa9e96e",
-  "label": "Heart rate comparison by time of day",
+  "id": "c6043540-e140-4eaa-8c97-b88c9ad2fa5a",
+  "label": "Heart rate comparison by time of day (vega)",
   "transformConfig": {
     "dataOrientation": "row",
     "dataRowIndex": 0,
@@ -27,5 +27,5 @@
       "2023-10-15"
     ]
   },
-  "transformType": "code"
+  "transformType": "config"
 }

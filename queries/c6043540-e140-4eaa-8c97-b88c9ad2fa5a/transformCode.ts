@@ -10,7 +10,7 @@ function transform(tables: Table[]): Table {
     const datetime = new Date(row.timestamp * 1000)
     const time = `${datetime.getHours()}:${datetime.getMinutes()}`
     const date = `${datetime.getFullYear()}-${datetime.getMonth()}-${datetime.getDate()}`
-    const timeBucket = groupByTime[time] || {time, timestamp: row.timestamp}
+    const timeBucket = groupByTime[time] || {time, timestamp: row.timestamp * 1000}
     timeBucket[date]= row.bpm
     groupByTime[time] = timeBucket
   }  

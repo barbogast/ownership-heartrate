@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time. asdf",
+  "mark": "line",
+  "data": {"name": "table"},
+  "width": "container",
+  "encoding": {
+    "x": {
+      "field": "timestamp", 
+      "type": "temporal",
+      "axis": [{
+        "title": "Hourly",
+        "format": "%M",
+        "labelOverlap": "parity",
+        "tickCount": "hour"
+      }]
+    },
+    "y": {"field": "bpm", "type": "quantitative"}
+  }
+}
